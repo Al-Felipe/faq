@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(227, 235, 241);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.resposta {
+    background-color: rgb(193, 193, 240);
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -5,11 +5,15 @@ export const AreaPerguntas = ({ perguntas }) => {
 
   return (
     <>
-      <h2>{perguntas.pergunta}</h2>
-      <button onClick={() => setMostrarResposta(!mostrarResposta)}>
-        {mostrarResposta ? "-" : "+"}
-      </button>
-      {mostrarResposta && <p>{perguntas.resposta}</p>}
+      <div className="container">
+        <h2>{perguntas.pergunta}</h2>
+        <button onClick={() => setMostrarResposta(!mostrarResposta)}>
+          {mostrarResposta ? "-" : "+"}
+        </button>
+      </div>
+      <div className="resposta">
+        {mostrarResposta && <p>{perguntas.resposta}</p>}
+      </div>
     </>
   );
 };
